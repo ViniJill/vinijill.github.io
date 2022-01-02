@@ -251,11 +251,6 @@ transition: 500ms ease;
   text-align:center;
 }
 
-.project_item img:hover{
-border: none;
-box-shadow: 0 0 35px 0 #3498db inset, 0 0 15px 2px #3498db;
-transition: 500ms ease;
-}
 
 .project_item a{
   text-align:center;
@@ -265,6 +260,7 @@ transition: 500ms ease;
 .project_item img{
 width: 60%;
 padding:1em;
+border-radius:25px;
 }
 
 .project_item p{
