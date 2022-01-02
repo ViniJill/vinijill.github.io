@@ -1,0 +1,51 @@
+.intro{
+    text-align: left;
+}
+
+.aboutIntro{
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "ac ac ac ac ac ai ai ai"
+}
+
+.aboutIntro .aboutContent{
+    grid-area: ac;
+}
+  
+.aboutIntro .aboutImage{
+    grid-area: ai;
+}
+
+.aboutContent p{
+    text-align:left;
+    margin-left: 0;
+}
+
+
+/* Tablet Responsive Changes */
+@media screen and (max-width: 768px) {
+
+.aboutIntro{
+    gap: 30px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "ac ac ac ac ac ac ac ac"
+    "ai ai ai ai ai ai ai ai";
+    text-align:center;
+}
+
+.aboutContent p{
+    width:100%;
+    text-align:left;
+    margin-left: 0;
+}
+
+.aboutImage img{
+    width:70%;
+}
+
+
+}
